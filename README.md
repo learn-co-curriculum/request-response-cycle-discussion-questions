@@ -25,14 +25,16 @@ Your task is to use [Postman](https://www.getpostman.com/) to make a POST reques
 
 - **Step 3:** We'll need to send some additional information along with the request, the API docs tell us that a title parameter is required in the body of the request.  In Postman, click the 'Body' tab of the request and select the the 'raw' format.  Add in the body of your request, it will be something like this:
 
- `{"title": "My issue Title", "body": "what a large issue"}`
+  `{"title": "My issue Title", "body": "what a large issue"}`
 
-  \* *Don't forget to make all the keys and values Strings*
+  \*\* *Don't forget to make all the keys and values Strings*
+  
+  Following the documentation, what other key value pairs can you add to the body of the request?
 
-- **Step 4:** Github needs to know who you are. Go to your [Github Account settings](https://github.com/settings/profile) and click 'Personal Access Tokens'
+- **Step 4:** The Github API needs to know who you are. Go to your [Github Account Settings](https://github.com/settings/profile) and click 'Personal Access Tokens'
 
- Click 'Generate New Token' and give your token 'repo' and 'user' scope. Generate the token and copy the long string
+  Click 'Generate New Token' and give your token 'repo' and 'user' scope. Generate the token and copy the long string
 
 - **Step 5:** Now you will need to add this token to the headers of your request.  In Postman, add a key/value pair to the Headers. The key should be `Authorization` and the value should be `token PASTE-YOUR-TOKEN-HERE`.
 
-That should be it! Check the repository to see the newly created issue, if you get an error try to use the error message to figure out where you need to change the request!
+That should do it! Check the repository to see the newly created issue, if you get an error try to use the error message to figure out where you need to change the configuration of the request.
