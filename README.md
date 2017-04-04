@@ -38,3 +38,5 @@ Your task is to use [Postman](https://www.getpostman.com/) to make a POST reques
 - **Step 5:** Now you will need to add this token to the headers of your request.  In Postman, add a key/value pair to the Headers. The key should be `Authorization` and the value should be `token PASTE-YOUR-TOKEN-HERE`.
 
 That should do it! Check the repository to see the newly created issue, if you get an error try to use the error message to figure out where you need to change the configuration of the request.
+
+With your table discuss how you think Github's servers process your POST request once it is received.  Is anything persisted? Did the databse change?
