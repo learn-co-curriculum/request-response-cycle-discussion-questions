@@ -31,7 +31,7 @@ Your task is to use [Postman](https://www.getpostman.com/) to make a POST reques
   
   Following the documentation, what other key value pairs can you add to the body of the request?
 
-- **Step 4:** The Github API needs to know who you are. Go to your [Github Account Settings](https://github.com/settings/profile) and click 'Personal Access Tokens'
+- **Step 4:** The Github API needs to know who you are. Go to your [Github Account Settings](https://github.com/settings/developers) and click 'Personal Access Tokens'
 
   Click 'Generate New Token' and give your token 'repo' and 'user' scope. Generate the token and copy the long string
 
