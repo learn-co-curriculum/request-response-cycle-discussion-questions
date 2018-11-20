@@ -37,6 +37,13 @@ Your task is to use [Postman](https://www.getpostman.com/) to make a POST reques
 
 - **Step 5:** Now you will need to add this token to the headers of your request.  In Postman, add a key/value pair to the Headers. The key should be `Authorization` and the value should be `token PASTE-YOUR-TOKEN-HERE`.
 
-That should do it! Check the repository to see the newly created issue, if you get an error try to use the error message to figure out where you need to change the configuration of the request.
 
-With your table discuss how you think Github's servers process your POST request once it is received.  Is anything persisted? Did the databse change?
+## Troubleshooting
+* Look at the status code in the response. Look up that status code and find out more about what it means, especially if the status code is _not_ 200.
+* A 422 status code may mean that you're using the wrong URL. Check your URL to make sure it matches the one in step 2.
+* If you're creating an issue on a private repository (if the repo is a lab or a fork of a lab, it should be private), GitHub witll return a 404 status code unless it knows who you are and that you should have access. If you're not familiar with what 404 means, look it up. Why might the developers at GitHub decide to send a 404 and not a 401 here?
+  * Make sure that your token has the correct scope (see step 4), that you've copied and pasted it correctly, and that it's preceded by `token ` _including a space_ in the value of the `Authorization` header.
+
+That should do it! Check the repository to see the newly created issue. If you get an error, check all of the steps against your request and try to use the error message to figure out where you need to change in the configuration of the request.
+
+With your table discuss how you think Github's servers process your POST request once it is received.  Is anything persisted? Did the database change?
